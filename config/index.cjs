@@ -47,6 +47,8 @@ const USER_CONFIG = {
   // 每日一言的内容类型
   // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
   LITERARY_PREFERENCE: '',
+  PROVINCE: '北京市',
+  CITY: '北京市',
   USERS: [
     {
       // 想要发送的人的名字
@@ -55,8 +57,7 @@ const USER_CONFIG = {
       id: 'oZzpR6ejg766hg66z6GGg9IEkKPU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'cWoCQF4PY4I93TW3eGA_5OOvTwlNnbXUgPy0XCtuvu0',
-      PROVINCE: '北京市',
-      CITY: '北京市',
+
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '08-13',
       horoscopeDateType: '今日',
