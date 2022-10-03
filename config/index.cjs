@@ -12,10 +12,41 @@ const USER_CONFIG = {
 
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: '47b0e9362afb30cb9a4d8d151fb0e6d9',
+  IS_SHOW_COLOR: true,
+  SWITCH: {
+    /** 每日天气 */
+    weather: true,
 
-  PROVINCE: '北京市',
-  CITY: '北京市',
+    /** 节假日 */
+    // 下一休息日综合提醒
+    holidaytts: true,
 
+    /** 每日N句 */
+    // 金山每日一句
+    CIBA: true,
+    // 每日一言
+    oneTalk: true,
+    // 土味情话(彩虹屁)
+    earthyLoveWords: true,
+    // 朋友圈文案
+    momentCopyrighting: false,
+    // 毒鸡汤
+    poisonChickenSoup: true,
+    // 古诗古文
+    poetry: true,
+
+    /** 星座运势 */
+    horoscope: false,
+
+    /** 生日消息和节日消息 */
+    birthdayMessage: true,
+
+    // 学生课表
+    courseSchedule: false,
+  },
+  // 每日一言的内容类型
+  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
+  LITERARY_PREFERENCE: '',
   USERS: [
     {
       // 想要发送的人的名字
@@ -24,8 +55,12 @@ const USER_CONFIG = {
       id: 'oZzpR6ejg766hg66z6GGg9IEkKPU',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'cWoCQF4PY4I93TW3eGA_5OOvTwlNnbXUgPy0XCtuvu0',
+      PROVINCE: '北京市',
+      CITY: '北京市',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '08-13',
+      horoscopeDateType: '今日',
+      openUrl: 'https://m.niucodata.com/cat/cat.php',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
